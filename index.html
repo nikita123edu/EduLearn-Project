@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduLearn — Learn Anything, Anywhere</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <!-- College Top Bar -->
+  <!-- <div class="top-bar">
+    <div class="container">
+      <img src="college-logo.png" alt="College Logo" class="college-logo" />
+      <span class="college-name">
+        दिग्विजयनाथ स्नातकोत्तर महाविद्यालय, गोरखपुर उ.प्र.
+        <small>Digvijai Nath Post Graduate College, Gorakhpur U.P.</small>
+      </span>
+    </div>
+  </div> -->
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo"><i class="fas fa-graduation-cap"></i> EduLearn</a>
+      <img src="college-logo.png" alt="College Logo" class="college-logo" />
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="progress.html">Progress</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Learn Without Limits</h1>
+      <p>Free courses, interactive quizzes, and study materials — all in one place. Start your learning journey today.</p>
+      <div class="hero-buttons">
+        <a href="courses.html" class="btn btn-primary"><i class="fas fa-rocket"></i> Explore Courses</a>
+        <a href="about.html" class="btn btn-secondary"><i class="fas fa-info-circle"></i> Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- Stats -->
+    <section class="section">
+      <div class="stats-bar">
+        <div class="stat-item">
+          <i class="fas fa-book-open"></i>
+          <h3>6+</h3>
+          <p>Courses</p>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-video"></i>
+          <h3>90+</h3>
+          <p>Video Lessons</p>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-pen-to-square"></i>
+          <h3>30+</h3>
+          <p>Quiz Questions</p>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-users"></i>
+          <h3>Free</h3>
+          <p>Forever</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Courses -->
+    <section class="section">
+      <div class="section-title">
+        <h2>Featured Courses</h2>
+        <p>Handpicked courses to get you started</p>
+      </div>
+      <div class="courses-grid" id="featured-courses">
+        <!-- Rendered by JS -->
+      </div>
+      <div style="text-align:center; margin-top:2rem;">
+        <a href="courses.html" class="btn btn-primary btn-sm"><i class="fas fa-th-list"></i> View All Courses</a>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section">
+      <div class="section-title">
+        <h2>How It Works</h2>
+        <p>Three simple steps to start learning</p>
+      </div>
+      <div class="stats-bar" style="margin-top:0;">
+        <div class="stat-item">
+          <i class="fas fa-search" style="color:var(--secondary);"></i>
+          <h3>1</h3>
+          <p>Browse & choose a course</p>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-play-circle" style="color:var(--accent);"></i>
+          <h3>2</h3>
+          <p>Watch videos & read materials</p>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-check-circle" style="color:var(--success);"></i>
+          <h3>3</h3>
+          <p>Take quizzes & track progress</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="progress.html">Progress</a>
+        <a href="about.html">About</a>
+      </div>
+      <p>&copy; 2026 EduLearn. Built for DNPG Innovathon.</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

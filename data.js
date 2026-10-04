@@ -69,7 +69,7 @@ const COURSES = [
     title: "World History Overview",
     category: "History",
     description: "Journey through the major events and civilizations that shaped our modern world, from ancient times to the 20th century.",
-    image: "https://images.unsplash.com/photo-1461360370896-922624d12e30?w=600&h=400&fit=crop",
+    image: "history.png",
     duration: "10 weeks",
     lessons: 20,
     level: "Intermediate",

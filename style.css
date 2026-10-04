@@ -5,10 +5,10 @@
 
 /* ===== COLLEGE TOP BAR ===== */
 .top-bar {
-  background: linear-gradient(135deg, #0d1b2a 0%, #1b2838 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
   color: #fff;
-  padding: 0.6rem 2rem;
-  border-bottom: 3px solid var(--accent, #fca311);
+  padding: 0.6rem 0.6rem;
+  /* border-bottom: 0px solid var(--accent, #fca311); */
 }
 
 .top-bar .container {
@@ -22,7 +22,7 @@
 
 .college-logo {
   width: 400px;
-  height: 400px;
+  height: 40px;
   /* border-radius: 50%; */
   object-fit: contain;
   /* background: #fff; */

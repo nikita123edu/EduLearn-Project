@@ -223,9 +223,9 @@ const LIBRARY = [
     icon: "fa-landmark",
     color: "#f72585",
     books: [
-      { title: "World History Volume 1", author: "OpenStax", pages: 724, year: 2022, cover: "https://images.unsplash.com/photo-1461360370896-922624d12e30?w=300&h=400&fit=crop", url: "https://openstax.org/details/books/world-history-volume-1" },
+      { title: "World History Volume 1", author: "OpenStax", pages: 724, year: 2022, cover: "world_history.jpg", url: "https://openstax.org/details/books/world-history-volume-1" },
       { title: "World History Volume 2", author: "OpenStax", pages: 698, year: 2022, cover: "https://images.unsplash.com/photo-1604580864964-0462f5d5b1a8?w=300&h=400&fit=crop", url: "https://openstax.org/details/books/world-history-volume-2" },
-      { title: "U.S. History", author: "OpenStax", pages: 1340, year: 2014, cover: "https://images.unsplash.com/photo-1422246654994-34e59aa1d458?w=300&h=400&fit=crop", url: "https://openstax.org/details/books/us-history" },
+      { title: "U.S. History", author: "OpenStax", pages: 1340, year: 2014, cover: "us_history.jpeg", url: "https://openstax.org/details/books/us-history" },
       { title: "The Art of War", author: "Sun Tzu", pages: 68, year: -500, cover: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=300&h=400&fit=crop", url: "https://www.gutenberg.org/ebooks/132" },
     ]
   },

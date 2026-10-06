@@ -23,7 +23,7 @@ const COURSES = [
       { name: "Lab Experiment Guide", icon: "fa-flask" },
       { name: "Interactive Cell Diagram", icon: "fa-microscope" }
     ],
-    videoId: "QnQe0xW_JY4",
+    videoId: "https://youtu.be/_zOwnsquS6E?si=fFXNay3Ly2KylXpV",
     quiz: [
       { q: "What is the powerhouse of the cell?", options: ["Nucleus", "Mitochondria", "Ribosome", "Golgi Apparatus"], answer: 1 },
       { q: "DNA stands for:", options: ["Deoxyribonucleic Acid", "Dinitrogen Acid", "Deoxyribose Nucleic Atom", "Dynamic Nuclear Acid"], answer: 0 },
@@ -55,7 +55,7 @@ const COURSES = [
       { name: "Graphing Calculator Guide", icon: "fa-calculator" },
       { name: "Video Lecture Notes", icon: "fa-video" }
     ],
-    videoId: "NybHckSEQBI",
+    videoId: "https://youtu.be/zcmEUvzgT3g?si=uisvc6TooRfZxSwO",
     quiz: [
       { q: "Solve for x: 2x + 5 = 15", options: ["x = 5", "x = 10", "x = 7", "x = 3"], answer: 0 },
       { q: "What is the degree of the polynomial 3x³ + 2x - 1?", options: ["1", "2", "3", "0"], answer: 2 },
@@ -87,7 +87,7 @@ const COURSES = [
       { name: "Key Figures Guide", icon: "fa-user-graduate" },
       { name: "Documentary Links", icon: "fa-film" }
     ],
-    videoId: "BCNk_mCMRgs",
+    videoId: "https://youtu.be/32XmLQxwhlQ?si=yMQE8ORyMCoTIEhf",
     quiz: [
       { q: "Which civilization built the pyramids of Giza?", options: ["Roman", "Greek", "Egyptian", "Mesopotamian"], answer: 2 },
       { q: "The Renaissance began in which country?", options: ["France", "England", "Italy", "Germany"], answer: 2 },

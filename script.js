@@ -417,6 +417,106 @@ function renderFeatured() {
   `).join("");
 }
 
+// ===== LIBRARY PAGE =====
+let activeFilter = "All";
+
+function renderLibrary() {
+  const container = document.getElementById("library-content");
+  if (!container) return;
+
+  const totalBooks = LIBRARY.reduce((sum, s) => sum + s.books.length, 0);
+
+  let html = `
+    <div class="library-stats">
+      <div class="stat-item"><i class="fas fa-book" style="color:var(--primary);"></i><h3>${totalBooks}</h3><p>Books Available</p></div>
+      <div class="stat-item"><i class="fas fa-layer-group" style="color:var(--secondary);"></i><h3>${LIBRARY.length}</h3><p>Subjects</p></div>
+      <div class="stat-item"><i class="fas fa-download" style="color:var(--success);"></i><h3>Free</h3><p>Open Access</p></div>
+    </div>
+
+    <div class="library-search">
+      <i class="fas fa-search"></i>
+      <input type="text" id="library-search-input" placeholder="Search books by title or author..." oninput="filterBooks()" />
+    </div>
+
+    <div class="subject-filters" id="subject-filters">
+      <button class="filter-btn active" onclick="setFilter('All')"><i class="fas fa-th"></i> All</button>
+      ${LIBRARY.map(s => `
+        <button class="filter-btn" onclick="setFilter('${s.subject}')">
+          <i class="fas ${s.icon}"></i> ${s.subject}
+        </button>
+      `).join("")}
+    </div>
+
+    <div id="library-books"></div>
+  `;
+  container.innerHTML = html;
+  renderBooks();
+}
+
+function setFilter(subject) {
+  activeFilter = subject;
+  document.querySelectorAll(".filter-btn").forEach(btn => {
+    btn.classList.toggle("active", btn.textContent.trim() === subject || (subject === "All" && btn.textContent.trim() === "All"));
+  });
+  renderBooks();
+}
+
+function filterBooks() {
+  renderBooks();
+}
+
+function renderBooks() {
+  const container = document.getElementById("library-books");
+  if (!container) return;
+  const query = (document.getElementById("library-search-input")?.value || "").toLowerCase();
+
+  let html = "";
+  const subjects = activeFilter === "All" ? LIBRARY : LIBRARY.filter(s => s.subject === activeFilter);
+
+  subjects.forEach(s => {
+    const filtered = s.books.filter(b =>
+      b.title.toLowerCase().includes(query) || b.author.toLowerCase().includes(query)
+    );
+    if (filtered.length === 0) return;
+
+    html += `
+      <div class="subject-section fade-in">
+        <div class="subject-heading">
+          <i class="fas ${s.icon}" style="background:${s.color};"></i>
+          <h3>${s.subject}</h3>
+          <span>${filtered.length} book${filtered.length > 1 ? 's' : ''}</span>
+        </div>
+        <div class="books-grid">
+          ${filtered.map(b => `
+            <div class="book-card">
+              <div class="book-cover">
+                <img src="${b.cover}" alt="${b.title}" loading="lazy" />
+                <span class="book-format"><i class="fas fa-file-pdf"></i> PDF</span>
+              </div>
+              <div class="book-info">
+                <h4>${b.title}</h4>
+                <p class="book-author"><i class="fas fa-user-pen"></i> ${b.author}</p>
+                <div class="book-meta">
+                  <span><i class="fas fa-file-lines"></i> ${b.pages} pages</span>
+                  <span><i class="fas fa-calendar"></i> ${b.year > 0 ? b.year : Math.abs(b.year) + ' BC'}</span>
+                </div>
+                <a href="${b.url}" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                  <i class="fas fa-external-link-alt"></i> Read / Download
+                </a>
+              </div>
+            </div>
+          `).join("")}
+        </div>
+      </div>
+    `;
+  });
+
+  if (!html) {
+    html = `<div class="no-progress"><i class="fas fa-search"></i><h3>No books found</h3><p>Try a different search term or filter.</p></div>`;
+  }
+  container.innerHTML = html;
+}
+
 // ===== INIT =====
 document.addEventListener("DOMContentLoaded", () => {
   renderFeatured();
@@ -424,4 +524,5 @@ document.addEventListener("DOMContentLoaded", () => {
   renderCourseDetail();
   initQuiz();
   renderProgress();
+  renderLibrary();
 });

@@ -23,7 +23,7 @@ const COURSES = [
       { name: "Lab Experiment Guide", icon: "fa-flask" },
       { name: "Interactive Cell Diagram", icon: "fa-microscope" }
     ],
-    videoId: "_zOwnsquS6E",
+    videoId: "QnQe0xW_JY4",
     quiz: [
       { q: "What is the powerhouse of the cell?", options: ["Nucleus", "Mitochondria", "Ribosome", "Golgi Apparatus"], answer: 1 },
       { q: "DNA stands for:", options: ["Deoxyribonucleic Acid", "Dinitrogen Acid", "Deoxyribose Nucleic Atom", "Dynamic Nuclear Acid"], answer: 0 },
@@ -55,7 +55,7 @@ const COURSES = [
       { name: "Graphing Calculator Guide", icon: "fa-calculator" },
       { name: "Video Lecture Notes", icon: "fa-video" }
     ],
-    videoId: "zcmEUvzgT3g",
+    videoId: "NybHckSEQBI",
     quiz: [
       { q: "Solve for x: 2x + 5 = 15", options: ["x = 5", "x = 10", "x = 7", "x = 3"], answer: 0 },
       { q: "What is the degree of the polynomial 3x³ + 2x - 1?", options: ["1", "2", "3", "0"], answer: 2 },
@@ -87,7 +87,7 @@ const COURSES = [
       { name: "Key Figures Guide", icon: "fa-user-graduate" },
       { name: "Documentary Links", icon: "fa-film" }
     ],
-    videoId: "32XmLQxwhlQ",
+    videoId: "BCNk_mCMRgs",
     quiz: [
       { q: "Which civilization built the pyramids of Giza?", options: ["Roman", "Greek", "Egyptian", "Mesopotamian"], answer: 2 },
       { q: "The Renaissance began in which country?", options: ["France", "England", "Italy", "Germany"], answer: 2 },
@@ -190,6 +190,76 @@ const COURSES = [
       { q: "What is the main character of a story called?", options: ["Antagonist", "Narrator", "Protagonist", "Foil"], answer: 2 },
       { q: "A sonnet traditionally has how many lines?", options: ["10", "12", "14", "16"], answer: 2 },
       { q: "Which literary device gives human qualities to non-human things?", options: ["Simile", "Alliteration", "Personification", "Hyperbole"], answer: 2 }
+    ]
+  }
+];
+
+// ===== LIBRARY DATA =====
+const LIBRARY = [
+  {
+    subject: "Biology",
+    icon: "fa-dna",
+    color: "#06d6a0",
+    books: [
+      { title: "Concepts of Biology", author: "OpenStax", pages: 746, year: 2013, cover: "https://images.unsplash.com/photo-1532153975070-2e9ab71f1b14?w=300&h=400&fit=crop", url: "https://openstax.org/details/books/concepts-biology" },
+      { title: "Biology 2e", author: "OpenStax", pages: 1538, year: 2018, cover: "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=300&h=400&fit=crop", url: "https://openstax.org/details/books/biology-2e" },
+      { title: "Anatomy & Physiology", author: "OpenStax", pages: 1336, year: 2013, cover: "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=300&h=400&fit=crop", url: "https://openstax.org/details/books/anatomy-and-physiology-2e" },
+      { title: "Microbiology", author: "OpenStax", pages: 1170, year: 2016, cover: "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=300&h=400&fit=crop", url: "https://openstax.org/details/books/microbiology" },
+    ]
+  },
+  {
+    subject: "Mathematics",
+    icon: "fa-calculator",
+    color: "#4361ee",
+    books: [
+      { title: "Algebra & Trigonometry", author: "OpenStax", pages: 1084, year: 2015, cover: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=300&h=400&fit=crop", url: "https://openstax.org/details/books/algebra-and-trigonometry-2e" },
+      { title: "Prealgebra 2e", author: "OpenStax", pages: 1148, year: 2020, cover: "https://images.unsplash.com/photo-1596495577886-d920f1fb7238?w=300&h=400&fit=crop", url: "https://openstax.org/details/books/prealgebra-2e" },
+      { title: "Calculus Volume 1", author: "OpenStax", pages: 876, year: 2016, cover: "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=300&h=400&fit=crop", url: "https://openstax.org/details/books/calculus-volume-1" },
+      { title: "Statistics", author: "OpenStax", pages: 902, year: 2013, cover: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=400&fit=crop", url: "https://openstax.org/details/books/introductory-statistics" },
+    ]
+  },
+  {
+    subject: "History",
+    icon: "fa-landmark",
+    color: "#f72585",
+    books: [
+      { title: "World History Volume 1", author: "OpenStax", pages: 724, year: 2022, cover: "https://images.unsplash.com/photo-1461360370896-922624d12e30?w=300&h=400&fit=crop", url: "https://openstax.org/details/books/world-history-volume-1" },
+      { title: "World History Volume 2", author: "OpenStax", pages: 698, year: 2022, cover: "https://images.unsplash.com/photo-1604580864964-0462f5d5b1a8?w=300&h=400&fit=crop", url: "https://openstax.org/details/books/world-history-volume-2" },
+      { title: "U.S. History", author: "OpenStax", pages: 1340, year: 2014, cover: "https://images.unsplash.com/photo-1422246654994-34e59aa1d458?w=300&h=400&fit=crop", url: "https://openstax.org/details/books/us-history" },
+      { title: "The Art of War", author: "Sun Tzu", pages: 68, year: -500, cover: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=300&h=400&fit=crop", url: "https://www.gutenberg.org/ebooks/132" },
+    ]
+  },
+  {
+    subject: "Computer Science",
+    icon: "fa-laptop-code",
+    color: "#fca311",
+    books: [
+      { title: "Think Python 2e", author: "Allen B. Downey", pages: 292, year: 2015, cover: "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=300&h=400&fit=crop", url: "https://greenteapress.com/wp/think-python-2e/" },
+      { title: "Automate the Boring Stuff", author: "Al Sweigart", pages: 505, year: 2019, cover: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=300&h=400&fit=crop", url: "https://automatetheboringstuff.com/" },
+      { title: "Eloquent JavaScript", author: "Marijn Haverbeke", pages: 472, year: 2018, cover: "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=300&h=400&fit=crop", url: "https://eloquentjavascript.net/" },
+      { title: "Introduction to CS", author: "OpenStax", pages: 858, year: 2023, cover: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=300&h=400&fit=crop", url: "https://openstax.org/details/books/introduction-computer-science" },
+    ]
+  },
+  {
+    subject: "Physics",
+    icon: "fa-atom",
+    color: "#7209b7",
+    books: [
+      { title: "University Physics Vol 1", author: "OpenStax", pages: 622, year: 2016, cover: "https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa?w=300&h=400&fit=crop", url: "https://openstax.org/details/books/university-physics-volume-1" },
+      { title: "University Physics Vol 2", author: "OpenStax", pages: 550, year: 2016, cover: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=300&h=400&fit=crop", url: "https://openstax.org/details/books/university-physics-volume-2" },
+      { title: "College Physics 2e", author: "OpenStax", pages: 1310, year: 2022, cover: "https://images.unsplash.com/photo-1628595351029-c2bf17511435?w=300&h=400&fit=crop", url: "https://openstax.org/details/books/college-physics-2e" },
+      { title: "The Feynman Lectures", author: "Richard Feynman", pages: 1552, year: 1964, cover: "https://images.unsplash.com/photo-1453733190371-0a9bedd82893?w=300&h=400&fit=crop", url: "https://www.feynmanlectures.caltech.edu/" },
+    ]
+  },
+  {
+    subject: "English Literature",
+    icon: "fa-book-open",
+    color: "#e63946",
+    books: [
+      { title: "Romeo and Juliet", author: "William Shakespeare", pages: 104, year: 1597, cover: "https://images.unsplash.com/photo-1474932430478-367dbb6832c1?w=300&h=400&fit=crop", url: "https://www.gutenberg.org/ebooks/1112" },
+      { title: "Pride and Prejudice", author: "Jane Austen", pages: 279, year: 1813, cover: "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300&h=400&fit=crop", url: "https://www.gutenberg.org/ebooks/1342" },
+      { title: "Great Expectations", author: "Charles Dickens", pages: 544, year: 1861, cover: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=300&h=400&fit=crop", url: "https://www.gutenberg.org/ebooks/1400" },
+      { title: "Adventures of Sherlock Holmes", author: "Arthur Conan Doyle", pages: 307, year: 1892, cover: "https://images.unsplash.com/photo-1476275466078-4007374efbbe?w=300&h=400&fit=crop", url: "https://www.gutenberg.org/ebooks/1661" },
     ]
   }
 ];
